@@ -74,7 +74,7 @@ app.get('/api/books',function(req,res){
                     res.send(bookdatas);
                 });
 });
-app.get('/api/book/:id',  (req, res) => {
+app.get('/api/book/:id/',  (req, res) => {
   
     const id = req.params.id;
       Bookdata.findOne({"_id":id})
